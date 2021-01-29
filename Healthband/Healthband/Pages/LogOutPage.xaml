@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Healthband.Pages.LogOutPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Label Text=" Pretende Terminar Sessão?"
+                AbsoluteLayout.LayoutBounds="0.8,0.5,300,100"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                TextColor="#2f3640"
+                FontSize="Large"
+                Margin="0,-15,0,0"/>
+            <Button Text="Sim" x:Name="YesBtn" Clicked="YesBtn_Clicked"
+            AbsoluteLayout.LayoutBounds="0.3,0.5,90,45"
+            AbsoluteLayout.LayoutFlags="PositionProportional" CornerRadius="20" BackgroundColor="#27ae60" TextColor="White" FontAttributes="Bold" Margin="0"/>
+            <Button Text="Não" x:Name="NoBtn" Clicked="NoBtn_Clicked"
+            AbsoluteLayout.LayoutBounds="0.7,0.5,90,45"
+            AbsoluteLayout.LayoutFlags="PositionProportional" CornerRadius="20" BackgroundColor="#EA2027" TextColor="White" FontAttributes="Bold"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

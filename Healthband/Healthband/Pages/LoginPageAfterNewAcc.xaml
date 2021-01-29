@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Healthband.Pages.LoginPageAfterNewAcc">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Margin="10">
+            <Label HorizontalOptions="Center"
+               Text="Obrigado!"
+               FontSize="60" FontAttributes="Bold" Margin="0,0,0,50"
+               TextColor="Black"/>
+
+            <Label HorizontalOptions="CenterAndExpand"
+               Text="Inicie sessão na sua conta."
+               FontSize="Large"
+               TextColor="#2c3e50" Margin="0,0,0,50"/>
+
+            <Entry x:Name="entryEmail"
+               Margin="0,0,0,20"
+               Placeholder="E-mail"
+               PlaceholderColor="#34495e"
+               Keyboard="Email"/>
+
+            <Entry x:Name="entryPassword"
+               Margin="0,0,0,20"
+               IsPassword="True"
+               Placeholder="Password"
+               PlaceholderColor="#34495e"/>
+
+            <Button Text="Iniciar Sessão"
+                x:Name="BtnLogin" HorizontalOptions="FillAndExpand"
+                FontSize="Large"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#3498db"
+                Clicked="BtnLogin_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

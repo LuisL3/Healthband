@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Healthband.Pages.AddUserPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Margin="10" Visual="Default">
+            <Label Text="Registe a sua conta"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Margin="0,0,0,10"/>
+
+            <Label x:Name="labelName"
+               Text="Nome"
+               FontSize="Medium"
+               TextColor="Black"/>
+            <Entry x:Name="entryName" Keyboard="Default"/>
+
+            <Label x:Name="LabelEmail"
+               Text="E-mail"
+               FontSize="Medium"
+               VerticalTextAlignment="Start"
+               TextColor="Black"/>
+            <Entry x:Name="entryEmail" Keyboard="Email"/>
+
+            <Label x:Name="LabelPassword"
+               Text="Password"
+               FontSize="Medium"
+               VerticalTextAlignment="Start"
+               TextColor="Black"/>
+            <Entry x:Name="entryPassword"
+               IsPassword="True"/>
+
+            <Label x:Name="LabelConfirmPassword"
+               Text="Confirmar Password"
+               FontSize="Medium"
+               VerticalTextAlignment="Start"
+               TextColor="Black"/>
+            <Entry x:Name="entryConfirmPassword"
+               IsPassword="True"/>
+
+            <Button x:Name="BtnRegister"
+                Text="Criar conta"
+                FontSize="Large" Margin="0,10,0,0" Clicked="BtnRegister_Clicked" BackgroundColor="#27ae60" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Healthband.Pages.InitialPage"
+             NavigationPage.HasBackButton="False"
+             BackgroundColor="Transparent">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <FlexLayout IsVisible="True" JustifyContent="SpaceEvenly" Direction="Column" AlignItems="Center" Margin="30,30,30,0">
+                <Label HorizontalOptions="Center"
+                    Text="HEALTHBAND"
+                    FontSize="Title" FontAttributes="Bold" Margin="0,0,0,20"
+                    TextColor="Black"/>
+                
+                <Label Text="Escolha o que pretende fazer"
+                       FontSize="Large"
+                       TextColor="Black"/>
+
+                <Button
+                    x:Name="LoginBtn"
+                    Text="Iniciar Sessão"
+                    TextColor="White"
+                    FontSize="Medium"
+                    BackgroundColor="#3498db"
+                    BorderColor="Black"
+                    FlexLayout.AlignSelf="Stretch"
+                    CornerRadius="5"
+                    Clicked="LoginBtn_Clicked"/>
+
+                <Label
+                    x:Name="LabelOr"
+                    Text="OU"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    TextColor="#2c3e50"
+                    BackgroundColor="White"
+                    FlexLayout.AlignSelf="Center"
+                    HorizontalOptions="CenterAndExpand"/>
+
+                <Button
+                    x:Name="ResgiterBtn"
+                    Text="Criar Conta"
+                    FontSize="Medium"
+                    TextColor="White"
+                    BorderColor="Black"
+                    BackgroundColor="#27ae60"
+                    FlexLayout.AlignSelf="Stretch"
+                    HorizontalOptions="CenterAndExpand"
+                    CornerRadius="5"
+                    Clicked="ResgiterBtn_Clicked"/>
+                
+               
+                
+                
+            </FlexLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

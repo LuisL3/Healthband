@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Healthband.Pages.ConnectionPage">
+    <ContentPage.Content>
+        <AbsoluteLayout  HorizontalOptions="FillAndExpand" x:Name="absoluteLayout">
+            <Button x:Name="BtnScan" Text="Procurar"
+                    Clicked="BtnScan_Clicked"
+                    AbsoluteLayout.LayoutBounds=".03,.06,180,60"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            
+            <Button x:Name="BtnStopScan" Text="Parar Procura"
+                    Clicked="BtnStopScan_Clicked"
+                    AbsoluteLayout.LayoutBounds=".03,.17,180,60"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Button x:Name="BtnDisconnect" Text="Desconectar"
+                    Clicked="BtnDisconnect_Clicked"
+                    AbsoluteLayout.LayoutBounds=".98,.06,160,60"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <Label Text="Estado"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   AbsoluteLayout.LayoutBounds=".03,.8,200,50"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label
+                Text="Ativar a tela ao levantar o pulso"
+                FontSize="Medium"
+                TextColor="Black"
+                AbsoluteLayout.LayoutBounds=".05,.3,300,25"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Switch x:Name="SwitchRist"
+                    Toggled="SwitchRist_Toggled"
+                    OnColor="Green"
+                    ThumbColor="White"
+                    AbsoluteLayout.LayoutBounds=".2,.3,300,25"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label
+                Text="Objetivo de passos"
+                FontSize="Medium"
+                TextColor="Black"
+                AbsoluteLayout.LayoutBounds=".05,.37,300,25"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label
+                Text="Formato da hora"
+                FontSize="Medium"
+                TextColor="Black"
+                AbsoluteLayout.LayoutBounds=".07,.43,300,25"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label
+                Text="Formato da data"
+                FontSize="Medium"
+                TextColor="Black"
+                AbsoluteLayout.LayoutBounds=".07,.49,300,25"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <Label Text="Dispositivo"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   AbsoluteLayout.LayoutBounds=".03,.01,200,50"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label x:Name="StatusText"
+                   Text="Inicie Procura."
+                   TextColor="Black"
+                   AbsoluteLayout.LayoutBounds=".05,.85,200,50"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label x:Name="BatteryStatus"
+                   Text="Informações de bateria não disponiveis."
+                   TextColor="Black"
+                   AbsoluteLayout.LayoutBounds=".05,.91,200,50"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

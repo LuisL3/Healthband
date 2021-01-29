@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Healthband.Pages.HomePage">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand">
+            <Image Source="IconApp.png"
+                   WidthRequest="100"
+                   Margin="0,0,0,20"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   AbsoluteLayout.LayoutBounds="0.5,0.2,150,150"/>
+
+            <Label Text="Bem-vindo"
+                   TextColor="Black"
+                   FontSize="50"
+                   FontAttributes="Bold"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   AbsoluteLayout.LayoutBounds="0.5,0.65,250,200"/>
+
+            
+            <Label Text="Seus Passos: "
+                   TextColor="Black"
+                   FontSize="Large"
+                   AbsoluteLayout.LayoutBounds="0.15,0.7,200,25"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label Text="00000"
+                   x:Name="LabelSteps"
+                   TextColor="Black"
+                   FontSize="Large"
+                   AbsoluteLayout.LayoutBounds="1.1,0.7,200,25"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <ImageButton
+                Source="reload.png"
+                x:Name="ReloadPage"
+                Clicked="ReloadPage_Clicked"
+                BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="0.95,0.97,50,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             mc:Ignorable="d"
+             x:Class="Healthband.Pages.HeartRatePage">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="White">
+            <Button
+                Text="Iníciar"
+                x:Name="BtnStartHeartrate"
+                Clicked="BtnStartHeartrate_Clicked"
+                BackgroundColor="#27ae60"
+                TextColor="White"
+                AbsoluteLayout.LayoutBounds="0.8,.07,75,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Button
+                Text="Parar"
+                x:Name="BtnStopHeartrate"
+                Clicked="BtnStopHeartrate_Clicked"
+                BackgroundColor="#EA2027"
+                TextColor="White"
+                AbsoluteLayout.LayoutBounds="0.8,.18,75,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label
+                x:Name="LabelHeartRate"
+                Text="0"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"
+                FontSize="50"
+                FontAttributes="Bold"
+                AbsoluteLayout.LayoutBounds=".19,.05,100,60"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label
+                Text="BPM"
+                FontAttributes="Bold"
+                TextColor="#ff1e3c"
+                FontSize="Large"
+                AbsoluteLayout.LayoutBounds=".24,.15,50,30"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Label Text="Histórico"
+                   TextColor="Black"
+                   FontSize="Title"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   AbsoluteLayout.LayoutBounds=".05,.25,100,30"/>
+
+
+            <Label Text="Intervalo"
+                   FontSize="Large"
+                   TextColor="Black"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   AbsoluteLayout.LayoutBounds=".05,.85,100,30"/>
+            
+            <Button x:Name="IntervalDefault"
+                    Text="1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".1,.95,70,50"
+                    Clicked="OnIntervalClicked"
+                    BackgroundColor="#3498db"
+                    TextColor="White"/>
+
+            <Button x:Name="Interval_5"
+                    Text="5"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".35,.95,70,50"
+                    Clicked="OnIntervalClicked"
+                    BackgroundColor="#3498db"
+                    TextColor="White"/>
+            
+            <Button x:Name="Interval_10"
+                    Text="10"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".60,.95,70,50"
+                    Clicked="OnIntervalClicked"
+                    BackgroundColor="#3498db"
+                    TextColor="White"/>
+
+            <Button x:Name="Interval_15"
+                    Text="15"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds=".85,.95,70,50"
+                    Clicked="OnIntervalClicked"
+                    BackgroundColor="#3498db"
+                    TextColor="White"/>
+
+            <StackLayout>
+                <forms:ChartView x:Name="Grafico_BPM"/>
+            </StackLayout>
+        </AbsoluteLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

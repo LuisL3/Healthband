@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Healthband.MenuPage"
+             NavigationPage.HasNavigationBar="False">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="#FFFFFF">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <!-- <Image Source="bg.png" Aspect="AspectFill" /> -->
+                    <StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Image Source="IconApp.png" Aspect="AspectFit" WidthRequest="60" HeightRequest="60"/>
+                        <Label Text="Healthband" TextColor="Black" FontSize="Large" x:Name="LabelName"/>
+                    </StackLayout>
+                </Grid>
+                <StackLayout Grid.Row="1" Spacing="15">
+                    <ListView x:Name="navigationDrawerList"
+                          RowHeight="60"
+                          BackgroundColor="#FFFFFF"
+                          SeparatorVisibility="None"
+                          ItemSelected="OnMenuItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <!-- Main design for our menu items -->
+                                        <StackLayout VerticalOptions="FillAndExpand"
+                                                 Orientation="Horizontal"
+                                                 Padding="5,5,0,5"
+                                                 Spacing="10">
+                                            <Image Source="{Binding Icon}"
+                                                 WidthRequest="30"
+                                                 HeightRequest="30"
+                                                 VerticalOptions="Center"/>
+                                            <Label Text="{Binding Title}"
+                                                 FontSize="Large"
+                                                 VerticalOptions="Center"
+                                                 TextColor="Black"
+                                                 />
+                                        </StackLayout>
+                                        <BoxView HeightRequest="2" BackgroundColor="Black"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+        </ContentPage>
+        </MasterDetailPage.Master>
+        </MasterDetailPage>
