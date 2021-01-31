@@ -10,6 +10,9 @@ Projeto realizado no âmbito da Prova de Aptidão Profissional 2020
 ## [Permissions Plugin for Xamarin](https://github.com/jamesmontemagno/PermissionsPlugin)
 Plugin cross platform utilizado para pedir e verificar as permissões no Xamarim.
 
+## Microcharts
+[Microcharts](https://github.com/dotnet-ad/Microcharts) é uma biblioteca de gráficos extremamente simples para uma ampla gama de plataformas
+
 **Antes de clonar, instale todas as bibliotecas acima**
 
 # Criador
